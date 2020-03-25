@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/name_of_the_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name here"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer the following quiz and get your confidence level."
+            android:textStyle="bold" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appearance_and_body"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="When it comes to my appearance and body Image, I am" />
+
+            <RadioButton
+                android:id="@+id/radio_1a"
+                android:onClick="firstRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy with how I look and how others perceive my appearance."
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_1b"
+                android:onClick="firstRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostly satisfied with my appearance, but have areas of my body and face that I dislike and that others find unattractive."
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_1c"
+                android:onClick="firstRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deeply unhappy about my appearance and feel shame and judgment from others"
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_1d"
+                android:onClick="firstRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not very attractive and feel very unhappy about my appearance and body"
+                android:textColor="#594b66" />
+        </RadioGroup>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="When I face difficulty, I feel hopeless and negative." />
+
+            <RadioButton
+                android:id="@+id/radio_2a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:text="Yes"
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_2b"
+                android:layout_width="wrap_content"
+                android:onClick="secondRadioButtonClicked"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#594b66" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Do you have goals that you wish to archive in the next(Select all that apply):" />
+
+        <CheckBox
+            android:id="@+id/three_months_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 months"
+            android:textColor="#594b66" />
+
+        <CheckBox
+            android:id="@+id/six_months_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6 months"
+            android:textColor="#594b66" />
+
+        <CheckBox
+            android:id="@+id/twelve_months_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 months"
+            android:textColor="#594b66" />
+
+        <CheckBox
+            android:id="@+id/few_years_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next Few Years"
+            android:textColor="#594b66" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Do you feel little when you don't know if you are pronouncing a word correctly or not?" />
+
+            <RadioButton
+                android:id="@+id/radio_3a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="thirdRadioButtonClicked"
+                android:text="Yes"
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_3b"
+                android:onClick="thirdRadioButtonClicked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#594b66" />
+        </RadioGroup>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/CustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Is it easy for you to tell someone that you are not happy with what they did to you?" />
+
+            <RadioButton
+                android:id="@+id/radio_4a"
+                android:layout_width="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="#594b66" />
+
+            <RadioButton
+                android:id="@+id/radio_4b"
+                android:layout_width="wrap_content"
+                android:onClick="fourthRadioButtonClicked"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#594b66" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/what_user_likes_about_themselves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mention at least 5 things you like about yourself"
+            android:inputType="textMultiLine"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="submitAnswers"
+            android:text="Submit Answers"
+            android:textColor="#4b266e" />
+
+        <TextView
+            style="@style/CustomText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confidence Score Details"
+            android:textColor="#4b266e" />
+
+        <TextView
+            android:id="@+id/confidence_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="0"
+            android:textColor="#4b266e"
+            android:textSize="36sp" />
+
+    </LinearLayout>
+</ScrollView>
